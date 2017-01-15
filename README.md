@@ -11,6 +11,18 @@ Summary: pytest plugin with mechanisms for caching across test runs
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-cache-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-cache-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-cache-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-cache-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-cache-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-cache-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-cache/badges/version.svg)](https://anaconda.org/conda-forge/pytest-cache)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-cache/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-cache)
+
 Installing pytest-cache
 =======================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pytest-cache` available on your p
 ```
 conda search pytest-cache --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-cache-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-cache-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-cache-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-cache-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-cache-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-cache-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-cache/badges/version.svg)](https://anaconda.org/conda-forge/pytest-cache)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-cache/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-cache)
 
 
 Updating pytest-cache-feedstock
