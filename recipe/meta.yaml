@@ -1,26 +1,22 @@
-{% set name = "pytest-cache" %}
 {% set version = "1.0" %}
-{% set sha256 = "be7468edd4d3d83f1e844959fd6e3fd28e77a481440a7118d430130ea31b07a9" %}
 
 package:
-  name: {{ name|lower }}
+  name: pytest-cache
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/p/pytest-cache/pytest-cache-{{ version }}.tar.gz
+  sha256: be7468edd4d3d83f1e844959fd6e3fd28e77a481440a7118d430130ea31b07a9
 
 build:
+  number: 2
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
-    - pip
     - python
-    - setuptools
+    - pip
   run:
     - python
     - pytest >=2.2
@@ -38,4 +34,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - bjodah
+    - ocefpaf
