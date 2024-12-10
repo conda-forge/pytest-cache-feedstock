@@ -5,24 +5,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pytest-cache/pytest-cache-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pytest-cache/pytest-cache-{{ version }}.tar.gz
   sha256: be7468edd4d3d83f1e844959fd6e3fd28e77a481440a7118d430130ea31b07a9
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - pytest >=2.2
     - execnet >=1.1.dev1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pytest_cache
 
